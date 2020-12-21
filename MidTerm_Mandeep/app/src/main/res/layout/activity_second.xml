@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp"
+  android:orientation="vertical">
+  <TextView
+    android:id="@+id/tv_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="20sp"/>
+  <RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/radioGroup">
+    <RadioButton
+      android:id="@+id/radio_graduate"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text=" graduated"
+      android:checked="false"
+      android:textSize="16dp" />
+    <RadioButton
+      android:id="@+id/radio_ungraduate"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text=" ungraduated"
+      android:checked="false"
+      android:textSize="16dp" />
+  </RadioGroup>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:text="Select the course"
+    android:textSize="18sp"/>
+  <Spinner
+    android:id="@+id/spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:text="Course fees"
+    android:textSize="18sp"/>
+  <TextView
+    android:id="@+id/tv_fees"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:textSize="16sp"/>
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_marginTop="10dp"
+    android:text="Course hours"
+    android:textSize="18sp"/>
+  <TextView
+    android:id="@+id/tv_hours"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/colorPrimary"
+    android:textSize="16sp"/>
+  <CheckBox
+    android:id="@+id/cb_accomodation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Accomodation"/>
+  <CheckBox
+    android:id="@+id/cb_medical_insurance"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=" Medical Insurance"/>
+  <Button
+    android:id="@+id/btn_add"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:text="Add"/>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginTop="16dp"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="22dp"
+      android:text="Total fees   : "/>
+    <TextView
+      android:id="@+id/total_fee"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:layout_marginStart="16dp"
+      android:textSize="18dp"
+      android:text="0"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textSize="22dp"
+      android:text="Total hours : "/>
+    <TextView
+      android:id="@+id/total_hours"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:layout_marginStart="16dp"
+      android:textSize="18dp"
+      android:text="0"/>
+  </LinearLayout>
+</LinearLayout>
